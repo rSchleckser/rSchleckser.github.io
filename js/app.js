@@ -59,7 +59,6 @@ header.append(logo);
 header.append(icon);
 header.append(nav);
 body.append(header);
-console.log(header);
 
 // Home Section
 const homeSection = document.createElement('section');
@@ -143,4 +142,4 @@ homeContent.append(btnTag);
 homImg.append(img);
 homeSection.append(homImg);
 
-body.append(homeSection);
+body.insertBefore(homeSection, body.firstChild);
