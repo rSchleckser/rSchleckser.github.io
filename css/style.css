@@ -116,6 +116,7 @@ body {
   height: 4rem;
   background: transparent;
   border: 0.2rem solid var(--main-color);
+  border-radius: 2rem;
   font-size: 2rem;
   color: var(--second-bg-color);
   margin: 3rem 1.5rem 3rem 0;
