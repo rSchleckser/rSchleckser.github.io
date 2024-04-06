@@ -6,6 +6,7 @@ let navbar = document.querySelector('.navbar');
 menuIcon.onclick = () => {
   menuIcon.classList.toggle('bx-x');
   navbar.classList.toggle('active');
+  navbar.style.display = 'block';
 };
 
 /*==================== scroll sections active link ====================*/
@@ -21,6 +22,18 @@ menuIcon.classList.remove('bx-x');
 navbar.classList.remove('active');
 
 /*==================== scroll reveal ====================*/
+ScrollReveal({
+  reset: true,
+  distance: '80px',
+  duration: 2000,
+  delay: 200,
+});
+
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .services-container, .contact form', {
+  origin: 'bottom',
+});
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 /*==================== typed js ====================*/
 
 // // Home Section
