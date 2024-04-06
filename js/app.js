@@ -34,6 +34,7 @@ ScrollReveal().reveal('.home-img, .services-container, .contact form', {
   origin: 'bottom',
 });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 /*==================== typed js ====================*/
 
 // // Home Section
