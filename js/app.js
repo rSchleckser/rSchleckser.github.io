@@ -18,7 +18,7 @@ header.classList.toggle('sticky', window.scrollY > 100);
 
 /*==================== remove toggle icon and navbar when click navbar link (scroll) ====================*/
 
-menuIcon.classList.remove('bx-x');
+navbar.classList.remove('bx-x');
 navbar.classList.remove('active');
 
 /*==================== scroll reveal ====================*/
@@ -36,6 +36,13 @@ ScrollReveal().reveal('.home-img, .services-container, .contact form', {
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 /*==================== typed js ====================*/
+const typed = new Typed('.multiple-text', {
+  strings: ['Frontend Engineer', 'Backend Engineer', 'Fullstack Engineer'],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true,
+});
 
 // // Home Section
 // const body = document.body;
